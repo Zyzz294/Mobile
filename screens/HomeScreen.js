@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native'
 import * as Icons from "react-native-heroicons/solid";
 import { Modal } from 'react-native';
 import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -57,6 +58,11 @@ const HomeScreen = () => {
 
 
         {/* Featured Rows */}
+        <FeaturedRow
+          title="Featured"
+          description="Paid plac"
+          featuredCategory="featured" />
+          
 
       </ScrollView>
     </SafeAreaView>
